@@ -34,7 +34,7 @@ const Menu = () => {
               return (
                 <>
                   <div className="menuitems" onClick={() => { foodType(items.name) }}>
-                    <img src={items.img} key={index} height={"100px"} width={"100px"} />
+                    <img id="me-img" src={items.img} key={index} height={"100px"} width={"100px"} />
                     <p>{items.name}</p>
                   </div>
                 </>

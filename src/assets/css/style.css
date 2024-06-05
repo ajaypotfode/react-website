@@ -505,8 +505,8 @@ section {
 
   .header .navbar {
     position: absolute;
-    display: flex;
-    flex-direction: column;
+    justify-content: end;
+    display: inline-block;
     top: 100%;
     right: -100%;
     background: #000;
@@ -546,6 +546,10 @@ section {
   }
   #menulist{
     overflow: auto;
+   }
+   #me-img{
+    height: 60px;
+    width: 60px;
    }
 }
 

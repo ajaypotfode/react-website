@@ -2,6 +2,11 @@ import React from "react";
 // import Swal from "sweetalert2"; 
 
 const Contact = () => {
+  const getEmail=(event)=>{
+    
+    alert("thank you for, contact with us")
+    event.preventDefault();
+  }
 
   return (
     <>
@@ -10,13 +15,15 @@ const Contact = () => {
           <span>contact</span> us
         </h1>
         <div className="row">
-          <iframe
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120976.60597935974!2d73.7921444!3d18.640695150000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b8377fbdeab3%3A0x2c4265dab1a7a0f8!2sPimpri-Chinchwad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1717579732387!5m2!1sen!2sin"
+            width="600" height="450"
             className="map"
-            src="https://www.google.com/maps/place/Pimpri-Chinchwad,+Maharashtra/@18.6406772,73.7097414,12z/data=!3m1!4b1!4m6!3m5!1s0x3bc2b8377fbdeab3:0x2c4265dab1a7a0f8!8m2!3d18.6297811!4d73.7997094!16zL20vMDU3cjZj?entry=ttu"
+            allowfullscreen=""
             loading="lazy"
-          ></iframe>
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
 
-          <form action="submit" >
+          <form action="">
             <h3>get in touch</h3>
             <div className="inputBox">
               <span className="fas fa-user"></span>
@@ -28,9 +35,9 @@ const Contact = () => {
             </div>
             <div className="inputBox">
               <span className="fas fa-phone"></span>
-              <input type="text" placeholder="number" />
+              <input type="number" placeholder="number" />
             </div>
-            <input type="submit" value="contact now" className="btn border-warning text-light display-2"/>
+            <input type="submit" value="contact now" className="btn bg-warning"  />
           </form>
         </div>
       </section>
